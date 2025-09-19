@@ -1,11 +1,14 @@
+import { SafeAreaView } from 'react-native';
 import Messenger from './Messenger'
 import CommentApp from './CommentApp'
 
-export default function App(){
+const App = () => {
   return(
-    <div>
+    <SafeAreaView style={{flex: 1}}>
       <Messenger/>
       <CommentApp/>
-    </div>
-  )
-}
+    </SafeAreaView>
+  );
+};
+
+export default App;

@@ -18,7 +18,7 @@ export default function CommentApp() {
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
       keyboardVerticalOffset={80}
     >
-      <Text style={styles.title}>Comment Section</Text>
+      <Text style={styles.title}>Comment App</Text>
       <TextInput
         style={styles.input}
         placeholder="Write a comment..."
@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     marginBottom: 15,
     fontWeight: 'bold',
+    textAlign: 'center',
   },
   input: {
     borderColor: '#ccc',

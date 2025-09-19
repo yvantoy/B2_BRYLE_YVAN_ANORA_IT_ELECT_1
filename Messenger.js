@@ -9,9 +9,9 @@ import {
   FlatList,
   KeyboardAvoidingView,
   Platform,
+  Image,
 } from 'react-native';
 
-// Custom FlatList component to display messages
 const MyFlatList = ({ messages }) => {
   return (
     <FlatList
@@ -48,7 +48,11 @@ export default function Messenger() {
 
   return (
     <SafeAreaView style={styles.container}>
-    <Text style={styles.text}>Welcome to Messenger</Text>
+      {/* Header with profile photo and welcome text */}
+      <View style={styles.header}>
+        <Text style={styles.text}> Messenger App</Text>
+      </View>
+
       <KeyboardAvoidingView
         style={styles.innerContainer}
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
@@ -76,7 +80,25 @@ export default function Messenger() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 20,
+    borderTopWidth: 5,
+    borderRadius: 1,
+    borderColor: '#ccc',
     backgroundColor: '#f9f9f9',
+  },
+  profileImage: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    marginRight: 10,
+  },
+  text: {
+    fontSize: 16,
   },
   innerContainer: {
     flex: 1,
@@ -95,14 +117,6 @@ const styles = StyleSheet.create({
   messageText: {
     color: '#fff',
     fontSize: 16,
-  },
-  text: {
-    fontSize: 16,
-    padding: 20,
-    borderTopWidth: 5,
-    borderRadius: 1,
-    borderColor: '#ccc',
-    backgroundColor: '#f9f9f9',
   },
   inputContainer: {
     flexDirection: 'row',
