@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "practicecoding",
-    "slug": "practicecoding",
+    "name": "Añora_BY",
+    "slug": "Añora_BY",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./picture/me.jpg",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.bryleyvan.practicecoding"
     },
     "web": {
       "favicon": "./assets/favicon.png"
